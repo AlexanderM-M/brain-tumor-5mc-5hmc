@@ -72,9 +72,6 @@ Molecular scores use complete CpG pairs and preserve the stated eligibility rule
 
 Processed study data may be requested from the corresponding authors, subject to ethical approval and institutional requirements. The underlying patient BAM files are not offered for sharing. Some stages require read-linked matrices; bedMethyl files alone cannot reproduce single-molecule analyses. This repository does not establish journal acceptance of the data-access arrangement.
 
-- Alexander Miller-Michlits: alexander.miller-michlits@i-med.ac.at
-- Yelyzaveta Miller-Michlits: yelyzaveta.miller-michlits@i-med.ac.at
-
 See [CITATION.cff](CITATION.cff). No manuscript DOI or archived software DOI has been assigned in this repository. For submission, archive a tagged release and cite its persistent identifier once available.
 
 ## Licence
