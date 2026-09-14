@@ -1,0 +1,6 @@
+{
+  "workspace": "./workspace",
+  "reference": "./references/hg38.fa",
+  "samtools": "samtools",
+  "workers": 4
+}

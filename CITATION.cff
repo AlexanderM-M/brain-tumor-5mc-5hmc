@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite the archived release when a persistent identifier is available."
+type: software
+title: "Brain tumour 5mC and 5hmC analysis"
+version: 0.1.0
+authors:
+  - family-names: Miller-Michlits
+    given-names: Alexander
+  - family-names: Miller-Michlits
+    given-names: Yelyzaveta
+  - family-names: Woehrer
+    given-names: Adelheid
+repository-code: "https://github.com/AlexanderM-M/brain-tumor-5mc-5hmc"
+license: MIT

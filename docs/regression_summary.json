@@ -1,0 +1,12 @@
+{
+  "heldout_folds_exactly_match_original_and_frozen": 20,
+  "all_regional_contrasts_and_omission_flags_match": 26585,
+  "bootstrap_2000_resamples_exact_match_regions": 80,
+  "native_three_encodings_exact_match": true,
+  "actual_molecule_matrices_three_encoding_scores_exact_match": 2,
+  "python_null_rng_and_block_scores_exact_match": true,
+  "saved_500_allocation_p_values_reproduced": {
+    "omnibus": 0.004,
+    "short_distance_adjusted": 0.034
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "deep_regional": {
+    "module": "extraction",
+    "prefix": "counts",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "story_extract": {
+    "module": "extraction",
+    "prefix": "targets",
+    "has_main": true,
+    "dependencies": []
+  },
+  "followup_extract": {
+    "module": "extraction",
+    "prefix": "followup_targets",
+    "has_main": true,
+    "dependencies": [
+      "story_extract"
+    ]
+  },
+  "strengthen_extract": {
+    "module": "extraction",
+    "prefix": "universe_targets",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "strengthen_matrices": {
+    "module": "extraction",
+    "prefix": "matrices",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "pooled_analysis": {
+    "module": "regional",
+    "prefix": "regional",
+    "has_main": true,
+    "dependencies": []
+  },
+  "interpret_pooled": {
+    "module": "regional",
+    "prefix": "interpret",
+    "has_main": false,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "story_panel": {
+    "module": "promoters",
+    "prefix": "panel",
+    "has_main": false,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "followup_select": {
+    "module": "promoters",
+    "prefix": "selection",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "strengthen_plan": {
+    "module": "promoters",
+    "prefix": "allocation_plan",
+    "has_main": true,
+    "dependencies": [
+      "followup_select",
+      "pooled_analysis"
+    ]
+  },
+  "story_molecules": {
+    "module": "molecules",
+    "prefix": "blocks",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "followup_molecules": {
+    "module": "molecules",
+    "prefix": "followup_blocks",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "followup_q1": {
+    "module": "molecules",
+    "prefix": "selection_summary",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "followup_distance": {
+    "module": "association",
+    "prefix": "distance",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "followup_distance_summary": {
+    "module": "association",
+    "prefix": "matching",
+    "has_main": true,
+    "dependencies": [
+      "followup_distance",
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "followup_row_null": {
+    "module": "association",
+    "prefix": "row_null",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "followup_row_summary": {
+    "module": "association",
+    "prefix": "row_summary",
+    "has_main": true,
+    "dependencies": [
+      "followup_distance",
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "followup_distance_ranges": {
+    "module": "association",
+    "prefix": "ranges",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "strengthen_score": {
+    "module": "association",
+    "prefix": "native",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis"
+    ]
+  },
+  "strengthen_influence": {
+    "module": "robustness",
+    "prefix": "influence",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "strengthen_compare": {
+    "module": "robustness",
+    "prefix": "encodings",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "strengthen_permutation": {
+    "module": "robustness",
+    "prefix": "randomisation",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "story_copy_number": {
+    "module": "context",
+    "prefix": "depth",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "story_alleles": {
+    "module": "context",
+    "prefix": "alleles",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "story_context": {
+    "module": "context",
+    "prefix": "annotation",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "story_repeat_sensitivity": {
+    "module": "context",
+    "prefix": "repeats",
+    "has_main": true,
+    "dependencies": [
+      "pooled_analysis",
+      "story_molecules"
+    ]
+  },
+  "manuscript_results_figures": {
+    "module": "figures",
+    "prefix": "main",
+    "has_main": false,
+    "dependencies": []
+  },
+  "manuscript_supplementary_figures": {
+    "module": "figures",
+    "prefix": "supplementary",
+    "has_main": false,
+    "dependencies": []
+  }
+}

@@ -1,0 +1,8 @@
+# Direct dependencies used for the local regression and figure checks.
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.5.1
+pysam==0.22.1
+requests==2.32.5
+reportlab==5.0.1
+pypdf==6.18.1

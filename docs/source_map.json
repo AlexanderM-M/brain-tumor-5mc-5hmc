@@ -1,0 +1,265 @@
+{
+  "stages": {
+    "deep_regional": {
+      "module": "extraction",
+      "prefix": "counts",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "story_extract": {
+      "module": "extraction",
+      "prefix": "targets",
+      "has_main": true,
+      "dependencies": []
+    },
+    "followup_extract": {
+      "module": "extraction",
+      "prefix": "followup_targets",
+      "has_main": true,
+      "dependencies": [
+        "story_extract"
+      ]
+    },
+    "strengthen_extract": {
+      "module": "extraction",
+      "prefix": "universe_targets",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "strengthen_matrices": {
+      "module": "extraction",
+      "prefix": "matrices",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "pooled_analysis": {
+      "module": "regional",
+      "prefix": "regional",
+      "has_main": true,
+      "dependencies": []
+    },
+    "interpret_pooled": {
+      "module": "regional",
+      "prefix": "interpret",
+      "has_main": false,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "story_panel": {
+      "module": "promoters",
+      "prefix": "panel",
+      "has_main": false,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "followup_select": {
+      "module": "promoters",
+      "prefix": "selection",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "strengthen_plan": {
+      "module": "promoters",
+      "prefix": "allocation_plan",
+      "has_main": true,
+      "dependencies": [
+        "followup_select",
+        "pooled_analysis"
+      ]
+    },
+    "story_molecules": {
+      "module": "molecules",
+      "prefix": "blocks",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "followup_molecules": {
+      "module": "molecules",
+      "prefix": "followup_blocks",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "followup_q1": {
+      "module": "molecules",
+      "prefix": "selection_summary",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "followup_distance": {
+      "module": "association",
+      "prefix": "distance",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "followup_distance_summary": {
+      "module": "association",
+      "prefix": "matching",
+      "has_main": true,
+      "dependencies": [
+        "followup_distance",
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "followup_row_null": {
+      "module": "association",
+      "prefix": "row_null",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "followup_row_summary": {
+      "module": "association",
+      "prefix": "row_summary",
+      "has_main": true,
+      "dependencies": [
+        "followup_distance",
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "followup_distance_ranges": {
+      "module": "association",
+      "prefix": "ranges",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "strengthen_score": {
+      "module": "association",
+      "prefix": "native",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis"
+      ]
+    },
+    "strengthen_influence": {
+      "module": "robustness",
+      "prefix": "influence",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "strengthen_compare": {
+      "module": "robustness",
+      "prefix": "encodings",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "strengthen_permutation": {
+      "module": "robustness",
+      "prefix": "randomisation",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "story_copy_number": {
+      "module": "context",
+      "prefix": "depth",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "story_alleles": {
+      "module": "context",
+      "prefix": "alleles",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "story_context": {
+      "module": "context",
+      "prefix": "annotation",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "story_repeat_sensitivity": {
+      "module": "context",
+      "prefix": "repeats",
+      "has_main": true,
+      "dependencies": [
+        "pooled_analysis",
+        "story_molecules"
+      ]
+    },
+    "manuscript_results_figures": {
+      "module": "figures",
+      "prefix": "main",
+      "has_main": false,
+      "dependencies": []
+    },
+    "manuscript_supplementary_figures": {
+      "module": "figures",
+      "prefix": "supplementary",
+      "has_main": false,
+      "dependencies": []
+    }
+  },
+  "source_sha256": {
+    "deep_regional.py": "933fe4745a4f9bed62a21dbb7d2e2bdf4177355c863db529768cc81543d944ab",
+    "story_extract.py": "92b944c31d779ba6be19638e86a4dd4a5b6afab386279ad9b27a909f84b74ab4",
+    "followup_extract.py": "09e560c87f7044a1969203aa7c8fec30241d8ea6ecf9bc9cd1f4c0f2f0b0b2c3",
+    "strengthen_extract.py": "8c74791c114504640cd7fc119699a0686e2cc843c080fde03146f9bf4f8d2499",
+    "strengthen_matrices.py": "c468d1d97d04c450f952824434d65f92ad93be9e1c7c2db47f6e35a2ac81d593",
+    "pooled_analysis.py": "734f1e0712a00a68d2a24ba7ab70ca831586769e307cfb5375ea93c70243f9b1",
+    "interpret_pooled.py": "5bc0391053b194ef230d9a54c34e05c6179415fc6f488518e4a38d495b3ff8a5",
+    "story_panel.py": "562f4ce0e7372929220f6151981565b6ec9d9ee85848f4f20bf7a3e694a0a45f",
+    "followup_select.py": "9c3fa0e0c5b9bbe9907366c3e0078944e634f2eac4d9deb9fc23914d591f105a",
+    "strengthen_plan.py": "80b59778e5663fa0b41ad98f33a9535882769829c8e4e259381c3101b39262a3",
+    "story_molecules.py": "b1164d8c8b3a34b8cb4a1eb10fe497405281175bdbb899964f9b93570cd00275",
+    "followup_molecules.py": "90409a347011f0efeb14520f7a9ae9ed795b63f9d719166e8bbaa05144e54006",
+    "followup_q1.py": "792db9a810382c381a149cfe769de99b1b5daee2ea3277f2cc228c9b88e14253",
+    "followup_distance.py": "4f088218d7294432d37e3a84142a72253bc3257e114eb600e336705a85f78d71",
+    "followup_distance_summary.py": "f140a22411f95966850b1ce05dc0d25c5cbbdc447b818f7a7865d6b510dd8365",
+    "followup_row_null.py": "8b4a95b92299234859a256d120dcb2a14888b66a72c159e77aedf7bacf3d127f",
+    "followup_row_summary.py": "04ec303fe3ca0217747e64def592133ded6243848a19cc4f8a3b92d625e9e4a2",
+    "followup_distance_ranges.py": "1bdc9bac4e0de4df386b11ecce87950664b78a4ead0035db96ee3646077a01c4",
+    "strengthen_score.py": "0605993721cd9b63d0b041858314f03e0fad2b25fe972b4d718183b34fb6be86",
+    "strengthen_influence.py": "ae28f7810a7db7358adfdf763aa67dbbb825cb85232f12880bbe067c148e8f6b",
+    "strengthen_compare.py": "703b08383bb43b79f3978f430cabb136e995df9e155957182356066c7e2808e4",
+    "strengthen_permutation.py": "37f50c76537e37c4540d968cb8676baeb49c002e3fd0fe62991ec5f7e73752bb",
+    "story_copy_number.py": "00221d05f6c1e36d0647865ec267beecf51e334608b75c425bb08f22c1a7ac9b",
+    "story_alleles.py": "0dfaab4470c3dfb640d82f0eef1983d191a7a77ffa4fca98eb1e573c1ed9fff7",
+    "story_context.py": "d117f80fc3c829335297bbcb2710680b68aaa3ab6d4ba2340c65280cc4b48e63",
+    "story_repeat_sensitivity.py": "2829b616300acd5ee73fbae5a7cfcb06eb20470015d2cf6d69c8bcd2060624a1",
+    "manuscript_results_figures.py": "b07aca332e2b2bdbda8cf4fb62af136b9b7ed9b634738373c2a8ffc8db0a6665",
+    "manuscript_supplementary_figures.py": "d3e24727704c3a85438b489ce4f5f5772dcb1925dd646dce8d5c695313437a51"
+  }
+}
