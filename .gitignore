@@ -36,3 +36,23 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+
+# Additional private data and machine-local artifacts
+clinical*
+*N_number*
+*N-number*
+raw_data/
+intermediate/
+.tmp/
+.cache/
+*.fastq
+*.fastq.gz
+*.vcf
+*.vcf.gz
+*.bcf
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*
+secrets*

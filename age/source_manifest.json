@@ -1,0 +1,138 @@
+[
+  {
+    "source": "AGE_ANALYSIS/next_generation/scripts/common.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/next_generation/scripts/common.py",
+    "source_sha256": "3ab6339db811026cbb094044ce217418d8e2001cb0ccfbf06a48bf622b042823",
+    "release_sha256": "fef4c5e693b6560b2f2749a0f9a22ffd3ddf9b71aad650ec017403a3cb115462"
+  },
+  {
+    "source": "AGE_ANALYSIS/next_generation/scripts/chemistry.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/next_generation/scripts/chemistry.py",
+    "source_sha256": "6818abf2e2bc683be2c43ee3436c60bd4cfab1ec1c5f1b98de50b824c5fea10d",
+    "release_sha256": "17b2a58a9cb120f2114cc662274282a53830641cfde72af67b8abc6746e87cb6"
+  },
+  {
+    "source": "AGE_ANALYSIS/next_generation/scripts/molecules.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/next_generation/scripts/molecules.py",
+    "source_sha256": "1805e9505e3057f9e3b0404f88e15d9c64775512b35fc7fb22b9be3627f92288",
+    "release_sha256": "ae6ed8d255353f77fdb7415fdd339050cc881d92abcb3869ee56ada6a0121b80"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/04_WGS_genomic_backbone/scripts/wgs_cna_outcome.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/04_WGS_genomic_backbone/scripts/wgs_cna_outcome.py",
+    "source_sha256": "0262cb7ab1087530e028d3cee884562bcf3d2d6268396e32aeb3f28566794acd",
+    "release_sha256": "b1c329f92f2140aea61a118ea9f5a71f4e72b2c7eed12b227f696fd098fae66c"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/FINAL_INTEGRATION/scripts/post_wgs_analysis.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/FINAL_INTEGRATION/scripts/post_wgs_analysis.py",
+    "source_sha256": "0635f0afa952a2a3357d0dbcaf63f376afffae80d2c8bee03eb3271d46925f52",
+    "release_sha256": "7872dbb8da8b65e3cd51326b3da63ecbd2cce450bae9250f89403f7b95dc16ea"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/06_independent_preparation/scripts/five_null.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/06_independent_preparation/scripts/five_null.py",
+    "source_sha256": "71e99b54dc39f859782cf0c728de61a0abf0a3362226232691d6de618ce7854f",
+    "release_sha256": "a4e7ac16932f108f8232de46de54e0e86feec3435557d1bc1074396f4d72de95"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/06_independent_preparation/scripts/resources.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/06_independent_preparation/scripts/resources.py",
+    "source_sha256": "7b81f36a5679cd16ddee4fcb2bb5ffcfd26bfb27e6a8a0f74c3660a396409863",
+    "release_sha256": "d2419b0b81c97fc43b18ca5ba7df341b95fbdbb2f6e13726a8e7335c68ce18ec"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/06_PDR_EPY/scripts/epiallele_metrics.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/06_PDR_EPY/scripts/epiallele_metrics.py",
+    "source_sha256": "366aa9e8126a0bc7a6777ffbed35f0b17dad0dfb2d11fb4b87f8df1397d33924",
+    "release_sha256": "c625f9980a2362f06d838220973e3d983ad0679bdd56bb7b831dd2ffcf99e231"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/06_PDR_EPY/scripts/fast_rarefaction.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/06_PDR_EPY/scripts/fast_rarefaction.py",
+    "source_sha256": "5751b5d55eb83c75ce7fdda8b0469f04bc91a885fcb15aa5008add6b3e118785",
+    "release_sha256": "6feaccf93823dcd8355b642ac31d584887d76e7dfd1541c83c44f04b52781a49"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/06_PDR_EPY/scripts/analyze_local_epialleles.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/06_PDR_EPY/scripts/analyze_local_epialleles.py",
+    "source_sha256": "902ea255554db1bbe5ecdadb41e61d73fcfe1bde353f76f069c89b1f75b63131",
+    "release_sha256": "09d9898509be41186c7fae22a19c0e29da7d30bde1c4f7b975cebe3887b6b07f"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/06_PDR_EPY/scripts/local_epialleles.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/06_PDR_EPY/scripts/local_epialleles.py",
+    "source_sha256": "575f8d0f5564174130a49383b80c32d62004d39cbef9e5d74e368796de06eaea",
+    "release_sha256": "08629850c404751665305deb92b212c9877687d28a049ba6c23405718563a1f5"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/07_FIVE_LOCUS_BETA_VALIDATION/scripts/focused_beta.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/07_FIVE_LOCUS_BETA_VALIDATION/scripts/focused_beta.py",
+    "source_sha256": "b68ddea152cc8fd6fdaae1349092a154d5b323ec0e67982db69addbcf4d46041",
+    "release_sha256": "52b39665028e62af8692c9ffcacf526bdd93435662af2d44939f501a96ca8bbb"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/07_FIVE_LOCUS_BETA_VALIDATION/scripts/composition_focused.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/07_FIVE_LOCUS_BETA_VALIDATION/scripts/composition_focused.py",
+    "source_sha256": "819069d7f972b02fef35ff10533257b705e0e728bce20a57a422cc5b18861ac0",
+    "release_sha256": "150fdcdea3fd0bf21dd2a102d861f99e747569b35fa4885112e85190a3e55d39"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/07_FIVE_LOCUS_BETA_VALIDATION/scripts/report_focused_beta.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/07_FIVE_LOCUS_BETA_VALIDATION/scripts/report_focused_beta.py",
+    "source_sha256": "cccdfeadf0bb0806f60174b339b7f35a92b95da0822314402b122e9d6faf0f05",
+    "release_sha256": "d58d60cff1c6039452a73d92c72a1128d6e3e26c3fa2008977ee71e0d638e044"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/targeted_statistics.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/targeted_statistics.py",
+    "source_sha256": "a12d79cfefbf6c3d76a3fffccce510e6cd580857086057f322bce695a661e675",
+    "release_sha256": "97be35d77d1eb2da3f18f2740b2ab01a66d5bf50300a74bed52836505a036c5b"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/read_archive.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/read_archive.py",
+    "source_sha256": "0dc64cfa0c1f7cdd383f447710aa5d6d354d667a7de1e3f8566868835191a2ec",
+    "release_sha256": "c7a8d7349e62de5c5e44b83d4906737ba5e09d6879e6e7d07be58b62b2d3a7c7"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/extract_targeted_rows.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/extract_targeted_rows.py",
+    "source_sha256": "ad3b9b49b2ff0948376c23e3dab4422b6622e4bea9c59b4ee3b2c26246ebe43e",
+    "release_sha256": "1b672ba3b8368d43cb0ed843c89db5d2d8d1bfaa646eae3f96d3fb9774d35694"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/curate_inputs.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/curate_inputs.py",
+    "source_sha256": "1cc65d95d5c119f969bb47b1afbf11cc3257c4ab6b72e74fef0ca7189e1db1e2",
+    "release_sha256": "58d0aaee9a9d5ff5d374e12727bc091d193f27c532cf57f390e940db9118816b"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/run_validation.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/scripts/run_validation.py",
+    "source_sha256": "23546f31327316114b71f952aae09d068ea4dcbd02646f7b142700d4a2132b32",
+    "release_sha256": "c5e98183118f347164baae5a8ecd28977d8b92f073e2786345cfd6d66ebf6757"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/scripts/revise_figures.py",
+    "released_path": "age/workflow/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/scripts/revise_figures.py",
+    "source_sha256": "7e60df21d14b2e3173a8511656d4f689f7d8aedcd5b2b2d55fe4f1ad2b05860f",
+    "release_sha256": "376ab537e7c8410b94d9797b15ed25142ec1563225fa2749b31af99fa91316fb"
+  },
+  {
+    "source": "AGE_ANALYSIS/deep_dive/12_SURVIVAL_ANALYSIS/scripts/run_survival.py",
+    "released_path": "age/survival_core.py",
+    "source_sha256": "aa21f6144d52e920485965142943c457971a251d1adbcf0a129bd2a00137b08c",
+    "release_sha256": "406b5bdb77ee9a060fb3561b8b86b6d0c630300f2e0fd13a0f4842f3c13235d7",
+    "functions": [
+      "likelihood",
+      "fit",
+      "direct_ll",
+      "validate_math",
+      "arrays",
+      "numeric",
+      "describe"
+    ],
+    "function_AST_identity": "verified below"
+  }
+]

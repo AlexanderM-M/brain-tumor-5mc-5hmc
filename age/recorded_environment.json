@@ -1,0 +1,12 @@
+{
+  "Python": "3.9.25",
+  "NumPy": "1.26.4",
+  "pandas": "2.3.3",
+  "SciPy": "1.13.1",
+  "pysam": "0.22.1",
+  "Matplotlib": "3.5.1",
+  "SAVANA_source": "1.3.8",
+  "unknown_upstream_versions": "Not inferred",
+  "clinical_source_data_included": false,
+  "raw_patient_sequencing_included": false
+}

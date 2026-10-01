@@ -1,0 +1,8 @@
+# AGE manuscript environment. Python 3.9.25 was recorded separately.
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.13.1
+pysam==0.22.1
+matplotlib==3.5.1
+# Spreadsheet presentation only, not a scientific-analysis dependency.
+openpyxl>=3.1,<4
