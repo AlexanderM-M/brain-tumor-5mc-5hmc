@@ -11,8 +11,12 @@ Start with [AGE instructions and processed-input contracts](age/README.md). Inst
 - `docs/`: earlier workflow, input and validation documentation.
 - `tests/`: synthetic tests for the earlier workflow.
 
-De-identified processed data accompany the article as Supplementary Data and Source Data. Raw patient sequencing, clinical accession maps and exact clinical dates are excluded for ethical/privacy reasons. No raw patient data or credentials are included, and no controlled-access or data-on-request arrangement is promised. Full resampling reproduction requires the appropriate processed molecule/count inputs; figure-level source tables alone are insufficient.
+De-identified processed data accompany the article as Supplementary Data and Source Data. Raw patient sequencing, clinical accession maps and exact clinical dates are excluded for ethical/privacy reasons. No raw patient data or credentials are included. Restricted data require appropriate ethics approval and an executed Data Transfer Agreement (DTA) with the Medical University of Innsbruck. Full resampling reproduction requires the appropriate processed molecule/count inputs; figure-level source tables alone are insufficient.
 
 For the earlier workflow, install with `python -m pip install -e '.[test]'`, copy `config.example.json` to `config.local.json`, and see [workflow documentation](docs/workflow.md). Both test suites use synthetic inputs.
 
 See [CITATION.cff](CITATION.cff) and the [MIT licence](LICENSE). No archival DOI is asserted.
+
+## Frozen manuscript release
+
+See [release instructions](release/README.md) for v1.0.0, the included publication source tables, verified figure/table regeneration and restricted-input limitations.

@@ -2,7 +2,7 @@
 
 Code for the three-figure AGE manuscript: fixed Horvath projections, molecule/patient resampling, qualified WGS-purity associations, five-CpG reference substitution, modification-resolved chemistry, local four-CpG discordance, beta-matched controls, targeted external validation and exploratory GBM survival.
 
-This is a processed-input release. No raw patient sequencing, clinical records, accession maps or exact clinical dates are included. No data-on-request or controlled-access arrangement is promised. Figure source tables alone do not contain the molecule/count matrices needed to repeat the resampling analyses; those analyses require the appropriate de-identified processed inputs described below. Missing inputs are not reconstructed or invented.
+This is a processed-input release. No raw patient sequencing, clinical records, accession maps or exact clinical dates are included. Restricted data require appropriate ethics approval and an executed Data Transfer Agreement (DTA) with the Medical University of Innsbruck. Figure source tables alone do not contain the molecule/count matrices needed to repeat the resampling analyses; those analyses require the appropriate de-identified processed inputs described below. Missing inputs are not reconstructed or invented.
 
 ## Layout and environment
 
@@ -79,3 +79,7 @@ python -m unittest discover -s age/tests -v
 ```
 
 The complete original sequencing workflow and private clinical-date adjudication cannot be reproduced from this public repository alone. Their exclusion is deliberate. Missing upstream versions and undistributed processed matrices remain explicit limitations, not implied public access commitments.
+
+## Frozen manuscript release
+
+See [release instructions](../release/README.md) for v1.0.0, the included publication source tables, verified figure/table regeneration and restricted-input limitations.

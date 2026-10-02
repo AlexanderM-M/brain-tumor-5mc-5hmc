@@ -1,0 +1,16 @@
+result	n	estimate	ci_low	ci_high	unit	p	FDR	loo_min	loo_max	interpretation
+mean_age_offset	20	32.5922344	21.94446987	43.81101608	years; patient+molecule bootstrap	NA	NA	NA	NA	frozen validated estimate
+positive_point_offsets	20	19.0	NA	NA	patients	NA	NA	NA	NA	frozen validated estimate
+positive_conditional_sampling_intervals	20	16.0	NA	NA	patients	NA	NA	NA	NA	frozen validated estimate
+mean_5hmC_clock_effect	20	1.795872417	-0.3075337143	3.960117813	years; patient+molecule bootstrap	NA	NA	NA	NA	frozen validated estimate
+median_absolute_measured_M_share	20	0.913709566	0.8865460393	0.9235315277	fraction of absolute measured weighted terms; not fraction of age	NA	NA	NA	NA	frozen validated estimate
+mean_offset_after_top5_reference_replacement	20	17.72275777	NA	NA	years; stress test	NA	NA	NA	NA	frozen validated estimate
+WGS_purity_vs_offset__none	13	0.6224215231	0.1572606519	0.8955967276	Spearman rho	NA	NA	0.5493093959	0.7605822404	conditional qualified tumour-only WGS fits
+WGS_purity_vs_offset__chronological_age	13	0.5976285349	-0.01014164908	0.8989325192	partial rank correlation	NA	NA	0.4466264547	0.7440945419	conditional qualified tumour-only WGS fits
+WGS_purity_vs_offset__clock_CpG_coverage_fraction	13	0.6235804448	-0.1484234711	0.9018436263	partial rank correlation	NA	NA	0.5223720616	0.7581321823	conditional qualified tumour-only WGS fits
+WGS_purity_vs_offset__chronological_age,clock_CpG_coverage_fraction	13	0.5934408123	-0.3010150959	0.9221943723	partial rank correlation	NA	NA	0.4510655902	0.7377888128	conditional qualified tumour-only WGS fits
+five_CpG_mean_reference_replacement_effect	20	14.869476629889249	NA	NA	years	NA	NA	NA	NA	same-cohort selected features; algebraic counterfactual
+five_CpG_ratio_of_cohort_means	20	0.4562275923093033	NA	NA	fraction	NA	NA	NA	NA	not causal attribution
+five_CpG_conditional_null_median	10000	4.211406117601522	0.9311801586491515	7.24525406017188	years; central null interval, NOT confidence interval	NA	NA	NA	NA	sign/weight/depth matched; context matching infeasible
+five_CpG_conditional_null_tail	10000	9.999000099990002e-05	NA	NA	plus-one conditional tail	NA	NA	NA	NA	NOT selection-adjusted significance
+M_only_mean_age_offset	20	30.796361988999998	NA	NA	years	NA	NA	NA	NA	same fixed reference imputation as M+H
