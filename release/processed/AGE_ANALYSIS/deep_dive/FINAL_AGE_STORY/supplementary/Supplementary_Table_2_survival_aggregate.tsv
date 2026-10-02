@@ -1,0 +1,4 @@
+Analysis	n	Deaths	Predictor	Scaling	HR	95% CI lower	95% CI upper	Likelihood-ratio P	Notes
+Primary Cox model	14	3	DNAm-age acceleration	Per +10 years	0.745	0.342	1.621	0.414	Exploratory; sparse events and short follow-up; no established prognostic significance.
+Earlier candidate sampling date	15	3	DNAm-age acceleration	Per +10 years	0.733	0.343	1.567	0.375	Exploratory; sparse events and short follow-up; no established prognostic significance.
+Later candidate sampling date	15	3	DNAm-age acceleration	Per +10 years	0.733	0.343	1.567	0.375	Exploratory; sparse events and short follow-up; no established prognostic significance.

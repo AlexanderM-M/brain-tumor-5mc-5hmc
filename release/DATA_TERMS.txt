@@ -1,0 +1,1 @@
+Software is licensed under the existing MIT LICENSE. No licence is granted or asserted here for patient-derived source data. Institutional confirmation of the source-data licence remains outstanding and blocks final Zenodo publication. DOI reservation and upload preparation may proceed. Already-public external data retain their source terms.

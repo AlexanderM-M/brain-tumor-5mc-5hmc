@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "brain-tumor-5mc-5hmc"
-version = "1.0.0"
+version = "1.0.1"
 description = "Regional and single-molecule analysis of nanopore 5mC and 5hmC in brain tumours"
 readme = "README.md"
 requires-python = ">=3.9"

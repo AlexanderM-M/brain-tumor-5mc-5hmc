@@ -1,13 +1,33 @@
 [
   {
-    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/tables/patient_phenotype_WGS_chemistry.tsv",
-    "sha256": "7a9333385734a5756505b2e7e5262031389bb81983053f2ffed1800ac255d01f",
-    "bytes": 9882
+    "path": "release/processed/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/tables/GBM_validation.tsv",
+    "sha256": "bdf93e5242629b3ee595c800af041eb8d259e69e90e2edf301d1ef338f0bb241",
+    "bytes": 11925
   },
   {
-    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/tables/retained_statistics.tsv",
-    "sha256": "eeda6c083d75a6f5f1f499bb17fe4212ace5aef9a8f7576ab4ab6e199d76a305",
-    "bytes": 2277
+    "path": "release/processed/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/tables/five_locus_summary.tsv",
+    "sha256": "bdca44665d3135915b536dc3f056accf45aec19bbcd33924f27781d2ca6045d0",
+    "bytes": 4215
+  },
+  {
+    "path": "release/processed/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/tables/normal_brain_validation.tsv",
+    "sha256": "bce4f1394e6f8a502e908d5ff2bfde7f553f6a62787952e567a768a68384062d",
+    "bytes": 3177
+  },
+  {
+    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/supplementary/Supplementary_Table_1_cohort.tsv",
+    "sha256": "93113872adebe8d8a63889c5196ece9a8af680a8b9577fd3af8d4ccf943681cf",
+    "bytes": 1469
+  },
+  {
+    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/supplementary/Supplementary_Table_2_survival_aggregate.tsv",
+    "sha256": "88f080395c166f87ac2186eaf5982c46d14051299083846aab54bd201e7d66b8",
+    "bytes": 629
+  },
+  {
+    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/tables/figure_2_external_source.tsv",
+    "sha256": "5a24b9fb4eefaea5c2a980c2184b3ad49d60c95f3b8d5cff4d358ce2eddabf1f",
+    "bytes": 7387
   },
   {
     "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/tables/five_CpG_matched_null.tsv",
@@ -20,33 +40,18 @@
     "bytes": 26483
   },
   {
-    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/tables/figure_2_external_source.tsv",
-    "sha256": "5a24b9fb4eefaea5c2a980c2184b3ad49d60c95f3b8d5cff4d358ce2eddabf1f",
-    "bytes": 7387
+    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/tables/patient_phenotype_WGS_chemistry.tsv",
+    "sha256": "da0b86b490d2b4940deebe0e3856a1ae6903faea81cb0e7c3a08d8a5b5a32ea9",
+    "bytes": 8544
   },
   {
-    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/supplementary/Supplementary_Table_1_cohort.tsv",
-    "sha256": "ab7e01735bf65d57ce54ec4a1c2185c3a269fded72768e2b2b85aada95c0a991",
-    "bytes": 2847
+    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/tables/retained_statistics.tsv",
+    "sha256": "eeda6c083d75a6f5f1f499bb17fe4212ace5aef9a8f7576ab4ab6e199d76a305",
+    "bytes": 2277
   },
   {
-    "path": "release/processed/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/supplementary/Supplementary_Table_2_survival.tsv",
-    "sha256": "439d687378b384c719e69c4b2804d04f9031c6bf9a2fecb1f7bad1da4aa3267d",
-    "bytes": 3907
-  },
-  {
-    "path": "release/processed/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/tables/normal_brain_validation.tsv",
-    "sha256": "bce4f1394e6f8a502e908d5ff2bfde7f553f6a62787952e567a768a68384062d",
-    "bytes": 3177
-  },
-  {
-    "path": "release/processed/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/tables/GBM_validation.tsv",
-    "sha256": "bdf93e5242629b3ee595c800af041eb8d259e69e90e2edf301d1ef338f0bb241",
-    "bytes": 11925
-  },
-  {
-    "path": "release/processed/AGE_ANALYSIS/deep_dive/09_EXTERNAL_VALIDATION/tables/five_locus_summary.tsv",
-    "sha256": "bdca44665d3135915b536dc3f056accf45aec19bbcd33924f27781d2ca6045d0",
-    "bytes": 4215
+    "path": "release/processed/PUBLIC_INPUTS.json",
+    "sha256": "afd5e0e311eea27c9695b82f6893af44ac344cdd33fdbb7382ce14313919a27c",
+    "bytes": 833
   }
 ]

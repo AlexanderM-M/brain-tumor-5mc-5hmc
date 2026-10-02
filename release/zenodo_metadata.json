@@ -1,0 +1,17 @@
+{
+  "title": "Brain tumour DNAm-age: privacy-minimized public release v1.0.1",
+  "version": "v1.0.1",
+  "doi": "10.5281/zenodo.23104961",
+  "doi_status": "reserved; supplied by depositor",
+  "publication_status": "blocked pending institutional source-data licence confirmation",
+  "software_license": "MIT",
+  "patient_source_data_license": null,
+  "description": "Public source tables use study pseudonyms and privacy-minimized clinical variables. Exact chronological ages derived from clinical dates, exact clinical dates, clinical accession mappings, patient-level survival times and vital status, raw patient sequencing data and detailed patient-level matrices are not included in the public release. Access to restricted patient-level data requires appropriate ethics approval and an executed Data Transfer Agreement (DTA) with the Medical University of Innsbruck.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/AlexanderM-M/brain-tumor-5mc-5hmc",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

@@ -68,6 +68,8 @@ def main():
     a=parser.parse_args();workspace=a.workspace.resolve()
     if workspace==BASE.parent or BASE.parent in workspace.parents:
         parser.error('Use a separate data workspace outside the repository.')
+    if a.stage != 'init' and (workspace/'PUBLIC_INPUTS.json').exists():
+        parser.error('Privacy-transformed public tables cannot be used for exact clinical-age analyses or manuscript figure regeneration. Use release/public_source_data.py for public outputs; see release/README.md.')
     initialize(workspace)
     if a.stage=='init':
         print('Source installed; no data analysis run. Supply processed inputs described in age/README.md.')

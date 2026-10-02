@@ -1,8 +1,8 @@
 cff-version: 1.2.0
-message: "Please cite the archived release when a persistent identifier is available."
+message: "Reserved DOI for frozen public release v1.0.1; Zenodo publication is pending data-licence confirmation."
 type: software
 title: "Brain tumour 5mC and 5hmC analysis"
-version: 1.0.0
+version: 1.0.1
 authors:
   - family-names: Miller-Michlits
     given-names: Alexander
@@ -12,3 +12,4 @@ authors:
     given-names: Adelheid
 repository-code: "https://github.com/AlexanderM-M/brain-tumor-5mc-5hmc"
 license: MIT
+doi: "10.5281/zenodo.23104961"

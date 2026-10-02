@@ -1,41 +1,39 @@
-# Frozen manuscript release v1.0.0
+# Frozen public release v1.0.1
 
-This public release contains the analysis code and ten de-identified publication source TSV tables. The detailed patient-level matrices remain controlled-access under the approved sharing scope. No raw sequencing, accession mapping or exact clinical date is included. The release is sufficient for regeneration of the three main figures and the two supplementary table sheets from frozen estimates. It is not a complete public rerun of the statistical analyses.
+Reserved Zenodo DOI for this frozen public release: **10.5281/zenodo.23104961** (https://doi.org/10.5281/zenodo.23104961). This DOI was supplied by the depositor; reservation is not evidence of publication. Final Zenodo publication is blocked until the institution confirms the patient-derived source-data licence. Software retains the MIT licence; no source-data licence is assumed or granted. See `DATA_TERMS.txt` and `zenodo_metadata.json`.
 
-## Environment and figure/table regeneration
+Public source tables use study pseudonyms and privacy-minimized clinical variables. Exact chronological ages derived from clinical dates, exact clinical dates, clinical accession mappings, patient-level survival times and vital status, raw patient sequencing data and detailed patient-level matrices are not included in the public release. Access to restricted patient-level data requires appropriate ethics approval and an executed Data Transfer Agreement (DTA) with the Medical University of Innsbruck.
 
-Use Python 3.9.25 on Linux and install `requirements.txt`. The scientific versions are recorded in `age/recorded_environment.json`. Openpyxl is an additional table-presentation dependency. From the extracted release directory:
+## What is in the public data layer
+
+Ten publication TSVs are supplied in `processed/`, including two privacy-transformed local-cohort tables and an aggregate-only survival table. Each adult age is the completed integer number of years; a minor is represented only as `<18`. The public age headers deliberately differ from the exact-input schemas. Do not recalculate any analysis using these transformed ages.
+
+`patient_phenotype_WGS_chemistry.tsv` supplies the public Figure 1-related molecular values, but it is NOT the exact Figure 1 source table. Individual apparent acceleration, its clinical-age-offset CIs, post-reference-substitution offsets and age-offset significance flags were removed. Together with predicted DNAm ages, those fields could reveal exact chronological ages by subtraction. The public cohort table likewise omits apparent acceleration, follow-up days, vital status and survival-inclusion flags. Molecular DNAm-age predictions are model outputs, not chronological ages, and remain unchanged.
+
+The previous patient-linked Supplementary Table 2 is absent. `Supplementary_Table_2_survival_aggregate.tsv` contains only the three already-reported primary/sensitivity Cox summaries: HR, CI, P value, sample size, event count and descriptive model labels. Named patient-omission rows were removed because differences in event counts could reveal an individual's death status. No survival model was rerun.
+
+The other seven aggregate/external TSVs are unchanged. Public GEO/TCGA accessions are retained. Study pseudonyms remain GBM-01 through GBM-15 and MEN-01 through MEN-05. `input_manifest.json` records checksums of the public inputs. The marker `processed/PUBLIC_INPUTS.json` prevents the original stage launcher from silently accepting a privacy-transformed workspace.
+
+## Supported public outputs
+
+Use Python 3.9.25 and the scientific dependencies in `../requirements.txt`; `../age/recorded_environment.json` preserves the recorded versions. From the repository root:
 
 ```bash
 python -m pip install -r requirements.txt
-python age/run.py --workspace ../age-reproduction init
-cp -R release/processed/. ../age-reproduction/
-python age/run.py --workspace ../age-reproduction main-figures
-python age/format_tables.py --cohort ../age-reproduction/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/supplementary/Supplementary_Table_1_cohort.tsv --survival ../age-reproduction/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/supplementary/Supplementary_Table_2_survival.tsv --output ../age-reproduction/Supplementary_Tables.xlsx
+python release/public_source_data.py --output ../public-release-outputs
+python -m unittest discover -s age/tests -v
 ```
 
-Generated PDFs are under `../age-reproduction/AGE_ANALYSIS/deep_dive/FINAL_AGE_STORY/figures/`. Input checksums are in `release/input_manifest.json`. The source TSVs preserve the reported values without refitting models; figure generation produces a derived external-cohort source table.
+The dedicated public command validates the public schemas and emits a privacy-labelled workbook containing the two local summary tables and aggregate survival results, plus a molecular-signal overview figure. It only displays supplied values; it does not fit or recalculate any scientific estimate and does not produce replacement manuscript results. Adult integer ages and `<18` remain text categories in the workbook.
 
-## Analysis coverage and restricted dependencies
+## Exact manuscript reproduction requires controlled inputs
 
-| Analysis | Included implementation | Public rerun status |
-|---|---|---|
-| DNAm-age reconstruction and 5mC/5hmC decomposition | `age/workflow/AGE_ANALYSIS/next_generation/scripts/chemistry.py` | Requires restricted U/M/H count matrices and additional reference inputs |
-| Molecule/patient resampling | `age/workflow/AGE_ANALYSIS/next_generation/scripts/molecules.py` | Requires restricted molecule matrices and linked input contracts |
-| Genomic tumour-content QC and associations | `age/wgs_qc.py`, `age/workflow/AGE_ANALYSIS/deep_dive/FINAL_INTEGRATION/scripts/post_wgs_analysis.py` | Requires restricted processed SAVANA/technical evidence |
-| Five-CpG reference substitution and matched sets | `post_wgs_analysis.py`, `06_independent_preparation/scripts/five_null.py` | Frozen matched-null source table included; upstream reconstruction requires restricted matrices |
-| Beta-matched local analyses and PDR/entropy | `07_FIVE_LOCUS_BETA_VALIDATION/scripts/`, `06_PDR_EPY/scripts/` under the workflow | Requires restricted local epiallele matrices and genomic annotation/control inputs |
-| External cohorts | `09_EXTERNAL_VALIDATION/scripts/` under the workflow | Result tables included; public target-row caches/metadata must be obtained separately using the documented cohort accessions and input contracts |
-| Figure and source-data generation | `FINAL_AGE_STORY/scripts/revise_figures.py` under the workflow | Included publication source tables are sufficient; verified in an isolated workspace |
-| Supplementary table generation | `age/format_tables.py` | Both source TSVs included |
-| Exploratory survival | `age/survival.py`, `age/survival_core.py` | Frozen publication tables included; precise adjudicated duration inputs remain controlled-access |
+The original analysis, figure and source-generation scripts are retained unchanged under `age/workflow/`, along with the original supplementary-table formatter and survival implementation. They cover DNAm-age reconstruction, molecule/patient resampling, WGS QC and associations, five-CpG reference substitution, matched-set analyses, external cohorts, chemical decomposition, local PDR/entropy and figures. Their schemas require exact authorised inputs documented in `../age/README.md`; those inputs are not all public. All original scientific numerical results are unchanged.
 
-See `age/README.md` for detailed analysis order, schemas, seeds and limitations. The archive contains scripts for all requested analysis categories but does not contain all inputs required to rerun the underlying analyses. Historical Dorado/model versions are not inferred. Synthetic tests check computational kernels; they are not patient-analysis validation.
+The privacy-transformed tables cannot regenerate exact-age analyses, patient-level survival analyses, the complete original Figure 1 or the complete original Figure 2. Full exact figure/table regeneration claims from v1.0.0 do not apply to this release. The public source-data exporter is separate from the exact-input analytical workflow. No exact clinical values were inferred or recomputed for this release.
 
-## Restricted access
+## History and deposition
 
-Raw patient-level sequencing data, clinical accession mappings and exact clinical dates are not publicly available because they may contain potentially identifying information and are subject to ethical and institutional restrictions. Access to these restricted data requires appropriate ethics approval and an executed Data Transfer Agreement (DTA) with the Medical University of Innsbruck. Detailed patient-level clock/molecule and local epiallele count matrices also remain controlled-access, with the same access requirements. Public supplementary/source tables contain fixed study pseudonyms only.
+v1.0.1 is a new commit/tag; v1.0.0 is not overwritten. Earlier Git commits contain now-restricted patient information. Deleting a release ZIP alone does not remove Git history. Repository-owner/institutional review and separately authorised remediation are needed; no history rewrite, remote deletion or force-push is performed by this release preparation.
 
-## Archival status
-
-This is the v1.0.0 manuscript release. The archive filename and accompanying release record identify the exact Git commit. No Zenodo DOI has been obtained; deposition requires an authenticated Zenodo account. Do not cite this release as permanently archived until deposition is published and its DOI has been verified. Software retains its existing MIT licence; confirm the data licence in Zenodo metadata before publishing. The software licence does not grant rights to restricted data.
+Upload only the single v1.0.1 ZIP and verify its supplied SHA-256. Do not upload the previous ZIP, repository history, private audits or internal inputs. Publication must await institutional data-licence confirmation and review of the historical exposure. No licence for patient-derived data has been invented.

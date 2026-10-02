@@ -23,9 +23,9 @@ python age/run.py --workspace /path/to/processed-workspace init
 
 `init` only copies code and creates output directories. It refuses to overwrite modified workspace scripts. Put processed inputs in that separate workspace; never use the original/raw-data directory as the workspace. The scientific stages write derived tables and caches within it. Input checks fail if required data are absent; the launcher does not download private data.
 
-## Processed input contracts
+## Controlled-workspace input contracts (not the public table schema)
 
-All specimen keys must be the fixed pseudonyms GBM-01 through GBM-15 and MEN-01 through MEN-05. De-identify every input, including JSON metadata and source-path fields, before distributing it. Keep exact clinical dates and accession IDs out of all processed inputs intended for public use.
+All specimen keys must be the fixed pseudonyms GBM-01 through GBM-15 and MEN-01 through MEN-05. These are controlled-workspace contracts, not authorisation to distribute their inputs publicly. Public files are restricted to the privacy-minimized layer documented in release/README.md.
 
 Paths below are relative to the workspace, not this repository.
 
@@ -43,9 +43,9 @@ Paths below are relative to the workspace, not this repository.
 
 The existing table readers and assertions are executable schemas. Preserve canonical specimen order, feature order, count definitions, matching gates, seeds and the supplied missing-value conventions. Supplying rounded publication values instead of full-precision processed values can change estimates; use the full-precision source tables.
 
-## Analysis order
+## Analysis order with authorised controlled inputs
 
-These commands document reproduction; preparation of this code release did not rerun the patient analyses.
+These commands require the exact controlled inputs described above; they must not be run on privacy-transformed public ages. Preparation of this code release did not rerun patient analyses. The public marker makes the stage launcher refuse those inputs.
 
 1. **Fixed clock and chemical decomposition:** run `clock-chemistry`, then `clock-bootstrap`. The clock is not trained or recalibrated. Molecule resampling and patient resampling retain their original distinction. The bootstrap writes `next_generation/tables/age_patient_summary.tsv`; copy that completed table into the corresponding `next_generation/final/tables/` location for downstream integration. Preserve the complete table, not just publication columns.
 2. **WGS QC:** use `age/wgs_qc.py --sample GBM-01 --folder PATH --log PATH --exit-code 0 --output PATH` on de-identified processed SAVANA output. Supply the retained cohort technical/allele-block evidence, then run `wgs-fit-stability`, `purity-associations`, `five-cpg`, and `joint-ploidy-qc`. The last stage applies the recorded joint-ploidy qualification and repeats downstream integration with those qualified estimates. The original genotype/segmentation work is not rerun. The preliminary allele-derived range and rejected fits must remain explicitly qualified.
@@ -82,4 +82,4 @@ The complete original sequencing workflow and private clinical-date adjudication
 
 ## Frozen manuscript release
 
-See [release instructions](../release/README.md) for v1.0.0, the included publication source tables, verified figure/table regeneration and restricted-input limitations.
+See [release instructions](../release/README.md) for v1.0.1, the privacy-transformed public source tables and their restricted-input limitations. Exact original figure/table regeneration is not supported by these public tables. Reserved release DOI: 10.5281/zenodo.23104961; publication awaits institutional data-licence confirmation.

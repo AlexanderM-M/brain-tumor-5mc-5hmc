@@ -1,0 +1,9 @@
+{
+  "version": "v1.0.1",
+  "privacy_transformed": true,
+  "local_age_representation": "Completed integer years for adults; <18 for minors",
+  "exact_clinical_age_analysis_supported": false,
+  "patient_survival_inputs_included": false,
+  "original_main_figures_reproducible_from_public_inputs": false,
+  "restricted_access": "Public source tables use study pseudonyms and privacy-minimized clinical variables. Exact chronological ages derived from clinical dates, exact clinical dates, clinical accession mappings, patient-level survival times and vital status, raw patient sequencing data and detailed patient-level matrices are not included in the public release. Access to restricted patient-level data requires appropriate ethics approval and an executed Data Transfer Agreement (DTA) with the Medical University of Innsbruck."
+}
