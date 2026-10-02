@@ -1,0 +1,21 @@
+Sample ID	Diagnosis	Age at sampling (privacy-minimized)	Sex	Sampling status	DNAm age (years)	WGS-derived purity	WGS purity status
+GBM-01	Glioblastoma	47	NA	Primary	144.4858448	0.82	Qualified
+GBM-02	Glioblastoma	69	NA	NA	145.6019774	0.9	Qualified—boundary fit
+GBM-03	Glioblastoma	70	Male	Primary	105.0035949	0.58	Qualified—boundary fit
+GBM-04	Glioblastoma	68	Female	Primary	76.27849739	NA	Unresolved
+GBM-05	Glioblastoma	57	Female	Primary	86.18636081	0.58	Qualified—boundary fit
+GBM-06	Glioblastoma	54	Male	Primary	110.6721997	0.89	Qualified—boundary fit
+GBM-07	Glioblastoma	65	Male	Recurrent	72.50323229	NA	Unresolved
+GBM-08	Glioblastoma	44	Male	Primary	96.30298485	0.81	Qualified—boundary fit
+GBM-09	Glioblastoma	66	NA	Primary	113.8910123	0.69	Qualified—boundary fit
+GBM-10	Glioblastoma	59	NA	Primary	59.6385476	NA	Unresolved
+GBM-11	Glioblastoma	60	NA	Primary	134.7272185	0.9	Qualified—boundary fit
+GBM-12	Glioblastoma	<18	NA	Recurrent	50.13224957	0.81	Qualified
+GBM-13	Glioblastoma	48	NA	NA	66.40813527	NA	Unresolved
+GBM-14	Glioblastoma	65	NA	Primary	84.38010148	0.65	Qualified
+GBM-15	Glioblastoma	73	NA	NA	89.33728252	NA	Unresolved
+MEN-01	Meningioma	39	NA	Primary	51.6449276	NA	Unresolved
+MEN-02	Meningioma	78	NA	Primary	102.7777281	0.69	Qualified
+MEN-03	Meningioma	65	Female	Primary	70.08806901	NA	Unresolved
+MEN-04	Meningioma	55	Female	Recurrent	80.64426133	0.89	Qualified
+MEN-05	Meningioma	55	Female	Primary	68.27305266	0.72	Qualified—boundary fit
